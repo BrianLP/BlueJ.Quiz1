@@ -74,7 +74,12 @@ public class LoopFun
     
     
 }
-return null;
+StringBuilder finalWord = new StringBuilder();
+        for (int i = 0; i < newWord.length; i++) {
+            finalWord.append(newWord[i]);
+        }
+        return finalWord.toString();
+
 }
 
 }
