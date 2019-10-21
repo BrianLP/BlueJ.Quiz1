@@ -10,8 +10,15 @@ public class LoopFun
        * @return the factorial of the number
        */
       public Integer factorial(Integer number){
-          return null;
-      }
+          int fact = 1;
+          for(int i = 1; 1 <= number; i++){
+            fact = fact * i;
+        }
+            return fact;
+        }
+    
+          
+      
 
       /**
        * Given a phrase, get the acronym of that phrase. Acronym is the combination of
@@ -21,8 +28,21 @@ public class LoopFun
        * @return Upper case string of the first letter of each word
        */
       public String acronym(String phrase) {
-          return null;
-      }
+          
+          String [] acro = phrase.split(" ");
+          for(int i = 0; i < acro.length; i++){
+              if(acro[i-1].equals(" ")){
+                  
+                }
+                System.out.println(acro[i]);
+            }
+            return null;
+        }
+    
+        
+          
+          
+      
 
       /**
        * To prevent anyone from reading our messages, we can encrypt it so it will only be readable by its
@@ -37,6 +57,31 @@ public class LoopFun
        * @return the encrypted string by shifting each character by three character
        */
       public String encrypt(String word) {
-          return null;
-      }
+     String[]replacer= {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","a","b","c","d"};
+     String[]newWord=word.split("");
+     for(int i = 0; i<=newWord.length; i++){
+        for(int j = replacer.length; j >=0 ; j--){
+            if(newWord[i].equals(replacer[j])){
+                newWord[i]=replacer[j+3];
+               
+                
+        
+      
+    }
+    
+    
 }
+    
+    
+}
+return null;
+}
+
+}
+
+
+
+
+
+
+
